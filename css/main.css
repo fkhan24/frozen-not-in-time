@@ -1,0 +1,183 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+}
+
+main {
+  background-image: repeating-linear-gradient(-33deg, #c9fcff, #d4fdff 2%);
+  min-height: 500px;
+  max-height: 500px;
+  border-color: #b3fbff;
+  border-style: solid;
+  border-width: 8px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.title {
+  color: #990073;
+  transform: rotate(-8deg);
+  margin-left: -15px;
+}
+
+p {
+  max-width: 19em;
+  transform: rotate(-5deg);
+}
+
+p, a {
+  color: #c09;
+  text-decoration: none;
+}
+
+.title, p {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.btn-ghost {
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+  border-color: #990073;
+}
+
+.text-box {
+  padding-left: 6%;
+  animation: fading 3500ms linear;
+  transform-origin: left center;
+}
+
+@keyframes fading {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .1;
+    filter: blur(5px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+}
+
+.img-frame {
+  min-height: 480px;
+}
+
+.cone {
+  height: 180px;
+  position: absolute;
+  top: -200px;
+  right: 72px;
+  animation: cone-fall .5s linear forwards;
+}
+
+.mint-chip {
+  height: 180px;
+  position: absolute;
+  top: -300px;
+  right: 72px;
+  animation: mint-fall .5s .4s linear forwards;
+}
+
+.chocolate-chip {
+  z-index: 1;
+  height: 180px;
+  position: absolute;
+  top: -400px;
+  right: 66px;
+  animation: chip-fall .5s .6s linear forwards;
+}
+
+.vanilla-fudge {
+  z-index: 2;
+  height: 180px;
+  position: absolute;
+  top: -500px;
+  right: 76px;
+  animation: fudge-fall .5s .8s linear forwards;
+}
+
+.cherry {
+  z-index: 3;
+  height: 180px;
+  position: absolute;
+  top: -600px;
+  right: 73px;
+  animation: cherry-fall .5s 1s linear forwards;
+}
+
+@keyframes cone-fall {
+
+  0% {
+    top: -200px;
+    right: 72px;
+  }
+
+  100% {
+    top: 300px;
+    right: 72px;
+  }
+
+}
+
+@keyframes mint-fall {
+
+  0% {
+    top: -300px;
+    right: 72px;
+  }
+
+  100% {
+    top: 196px;
+    right: 72px;
+  }
+
+}
+
+@keyframes chip-fall {
+
+  0% {
+    top: -400px;
+    right: 66px;
+  }
+
+  100% {
+    top: 110px;
+    right: 66px;
+  }
+
+}
+
+@keyframes fudge-fall {
+
+  0% {
+    top: -500px;
+    right: 76px;
+  }
+
+  100% {
+    top: 36px;
+    right: 76px;
+  }
+
+}
+
+@keyframes cherry-fall {
+
+  0% {
+    top: -600px;
+    right: 73px;
+  }
+
+  100% {
+    top: -43px;
+    right: 73px;
+  }
+
+}
